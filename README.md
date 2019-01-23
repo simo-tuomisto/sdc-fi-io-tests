@@ -49,9 +49,9 @@ the overall load would be from 4 to 32 cpus with an increment of 4 cpus.
 
 Available tests include:
 - fio-seq-read - Sequential read test
-- fio-seq-write - Sequential read test
+- fio-seq-write - Sequential write test
 - fio-rand-read - Random read test
-- fio-rand-write - Random read test
+- fio-rand-write - Random write test
 
 In tests each array task will create a 20GB file that will be accessed in the
 fashion described in the 
