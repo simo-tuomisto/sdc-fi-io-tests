@@ -7,7 +7,7 @@ The tests are done with fio io tester. It can be obtained
 
 The output is by default saved in json+ output. Some older versions of fio do
 not have this format. See
-[fio documentation](https://fio.readthedocs.io/en/latest/fio_doc.html#json-output)
+[fio documentation](https://fio.readthedocs.io/en/latest/fio_doc.html#id1)
 for information on the format.
 
 The default way of running the script is done using Slurm scheduler, so that
