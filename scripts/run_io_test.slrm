@@ -1,0 +1,30 @@
+#!/bin/bash
+#SBATCH -t 03:00:00
+#SBATCH -n 1
+
+# Set the job to quit if something fails
+set -euo pipefail
+
+# Set script directory
+SCRIPTDIR=$(pwd)
+# Set work directory
+WRKDIR="$(dirname "${SCRIPTDIR}")"/work_dir
+# Set output directory
+OUTPUTDIR="$(dirname "${SCRIPTDIR}")"/outputs
+
+# Go to work directory
+cd $WRKDIR
+
+# Get jobname from first argument
+JOBNAME=$1
+# Get the number of jobs from the second argument
+NJOBS=$2
+
+# Set a unique id for this job
+JOBID=${NJOBS}_${SLURM_ARRAY_TASK_ID}
+
+# Run fio with SLURM_CPUS_PER_TASK number of workers (default: 1) and store output to output dir.
+fio --filename "${JOBNAME}-${JOBID}.job" --numjobs "${SLURM_CPUS_PER_TASK:-1}" --output-format="json+" --output "${OUTPUTDIR}/${JOBNAME}-${JOBID}.json" "${SCRIPTDIR}/${JOBNAME}.fio"
+
+# Remove temporary work file created by the worker
+rm ${JOBNAME}-${JOBID}*.job
