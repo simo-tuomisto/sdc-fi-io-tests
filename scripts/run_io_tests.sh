@@ -33,6 +33,6 @@ for NJOBS in $(seq $STARTJOBS $MAXJOBS); do
 		JOBID=$(sbatch --array=1-${NJOBS} --output=../outputs/${JOBNAME}-${NJOBS}_%a.out ${EXTRA_PARAMETERS} run_io_test.slrm ${JOBNAME} ${NJOBS} | awk '{ print $NF }')
 	else
     # Submit a job with dependency on the previous job (job with id JOBID). Capture JOBID for next job in the series.
-		JOBID=$(sbatch --array=1-${NJOBS} --output=../outputs/${JOBNAME}-${NJOBS}_%a.out --dependency=afterok:$JOBID ${EXTRA_PARAMETERS} run_io_test.slrm ${JOBNAME} ${NJOBS} | awk '{ print $NF }')
+		JOBID=$(sbatch --array=1-${NJOBS} --output=../outputs/${JOBNAME}-${NJOBS}_%a.out ${EXTRA_PARAMETERS} --dependency=afterok:$JOBID run_io_test.slrm ${JOBNAME} ${NJOBS} | awk '{ print $NF }')
 	fi
 done
