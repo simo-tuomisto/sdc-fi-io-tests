@@ -1,0 +1,231 @@
+/mnt/home_nfs/tuomiss1/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/ior-3.3.0-scqmwbfadkbt6v7kmdc4rwtf3mjenwhf/bin/mdtest
+Running mdtest to /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user
+Iterations: 5
+V-1: Entering PrintTimestamp...
+-- started at 10/14/2021 10:21:08 --
+
+mdtest-3.3.0 was launched with 24 total task(s) on 4 node(s)
+Command line used: /mnt/home_nfs/tuomiss1/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/ior-3.3.0-scqmwbfadkbt6v7kmdc4rwtf3mjenwhf/bin/mdtest '-F' '-v' '-v' '-p' '10' '-d' '/mnt/glustervol1_io/io_benchmarks/simple-mdtest-user' '-i' '5' '-n' '10000' '-u' '-e' '16384' '-w' '16384' '-N' '1'
+V-1: Rank   0 Line   239 Entering parse_dirpath on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user...
+V-1: Rank   0 Line  1398 main: Setting create/stat/read/remove_only to True
+V-1: Rank   0 Line  1401 Entering valid_tests...
+V-1: Rank   0 Line  2018 api                     : (null)
+V-1: Rank   0 Line  2019 barriers                : True
+V-1: Rank   0 Line  2020 collective_creates      : False
+V-1: Rank   0 Line  2021 create_only             : True
+V-1: Rank   0 Line  2022 dirpath(s):
+V-1: Rank   0 Line  2024 	/mnt/glustervol1_io/io_benchmarks/simple-mdtest-user
+V-1: Rank   0 Line  2026 dirs_only               : False
+V-1: Rank   0 Line  2027 read_bytes              : 16384
+V-1: Rank   0 Line  2028 read_only               : True
+V-1: Rank   0 Line  2029 first                   : 1
+V-1: Rank   0 Line  2030 files_only              : True
+V-1: Rank   0 Line  2034 iterations              : 5
+V-1: Rank   0 Line  2035 items_per_dir           : 0
+V-1: Rank   0 Line  2036 last                    : 0
+V-1: Rank   0 Line  2037 leaf_only               : False
+V-1: Rank   0 Line  2038 items                   : 10000
+V-1: Rank   0 Line  2039 nstride                 : 1
+V-1: Rank   0 Line  2040 pre_delay               : 10
+V-1: Rank   0 Line  2041 remove_only             : False
+V-1: Rank   0 Line  2042 random_seed             : 0
+V-1: Rank   0 Line  2043 stride                  : 1
+V-1: Rank   0 Line  2044 shared_file             : False
+V-1: Rank   0 Line  2045 time_unique_dir_overhead: False
+V-1: Rank   0 Line  2046 stone_wall_timer_seconds: 0
+V-1: Rank   0 Line  2047 stat_only               : True
+V-1: Rank   0 Line  2048 unique_dir_per_task     : True
+V-1: Rank   0 Line  2049 write_bytes             : 16384
+V-1: Rank   0 Line  2050 sync_file               : False
+V-1: Rank   0 Line  2051 call_sync               : False
+V-1: Rank   0 Line  2052 depth                   : 0
+V-1: Rank   0 Line  2053 make_node               : 0
+V-1: Rank   0 Line  1493 Entering show_file_system_size on /mnt/glustervol1_io/io_benchmarks
+Path: /mnt/glustervol1_io/io_benchmarks
+FS: 9.6 TiB   Used FS: 22.4%   Inodes: 4900.0 Mi   Used Inodes: 0.0%
+
+Nodemap: 111111000000000000000000
+V-0: Rank   0 Line  2169 Shifting ranks by 6 for each phase.
+24 tasks, 240000 files
+V-1: Rank   0 Line  2241 
+V-1: Rank   0 Line  2242    Operation               Duration              Rate
+V-1: Rank   0 Line  2243    ---------               --------              ----
+V-1: Rank   0 Line  1651 main: * iteration 1 *
+V-2: Rank   0 Line  1656 main (for j loop): making testdir, '/mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.0-0'
+V-1: Rank   0 Line  1576 Entering create_remove_directory_tree on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.0-0, currDepth = 0...
+V-2: Rank   0 Line  1582 Making directory '/mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.0-0/mdtest_tree.0.0/'
+V-1: Rank   0 Line  1576 Entering create_remove_directory_tree on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.0-0/mdtest_tree.0.0/, currDepth = 1...
+V-1: Rank   0 Line  1725 V-1: main:   Tree creation     :          0.601 sec,          1.665 ops/sec
+delaying 10 seconds . . .
+V-1: Rank   0 Line   305 Entering unique_dir_access, set it to /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.0-0/mdtest_tree.6.0
+V-1: Rank   0 Line   225 V-1: Entering offset_timers...
+V-1: Rank   0 Line   481 Entering create_remove_items on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.0-0/mdtest_tree.6.0, currDepth = 0...
+V-1: Rank   0 Line   412 Entering create_remove_items_helper on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.0-0/mdtest_tree.6.0
+V-1: Rank   0 Line   305 Entering unique_dir_access, set it to /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.0-0/mdtest_tree.12.0
+V-1: Rank   0 Line   225 V-1: Entering offset_timers...
+V-1: Rank   0 Line   549 Entering mdtest_stat on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.0-0/mdtest_tree.12.0
+V-1: Rank   0 Line   305 Entering unique_dir_access, set it to /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.0-0/mdtest_tree.18.0
+V-1: Rank   0 Line   225 V-1: Entering offset_timers...
+V-1: Rank   0 Line   632 Entering mdtest_read on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.0-0/mdtest_tree.18.0
+V-1: Rank   0 Line   305 Entering unique_dir_access, set it to /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.0-0/mdtest_tree.0.0
+V-1: Rank   0 Line   225 V-1: Entering offset_timers...
+V-1: Rank   0 Line   481 Entering create_remove_items on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.0-0/mdtest_tree.0.0, currDepth = 0...
+V-1: Rank   0 Line   412 Entering create_remove_items_helper on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.0-0/mdtest_tree.0.0
+V-1: Rank   0 Line   305 Entering unique_dir_access, set it to /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.0-0/
+V-1: Rank   0 Line   225 V-1: Entering offset_timers...
+V-1: Rank   0 Line  1223   File creation     :         32.171 sec,       7460.095 ops/sec
+V-1: Rank   0 Line  1227   File stat         :         13.160 sec,      18236.696 ops/sec
+V-1: Rank   0 Line  1228   File read         :         42.937 sec,       5589.579 ops/sec
+V-1: Rank   0 Line  1229   File removal      :         22.090 sec,      10864.834 ops/sec
+V-1: Rank   0 Line  1576 Entering create_remove_directory_tree on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.0-0, currDepth = 0...
+V-1: Rank   0 Line  1576 Entering create_remove_directory_tree on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.0-0/mdtest_tree.0.0/, currDepth = 1...
+V-2: Rank   0 Line  1600 Remove directory '/mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.0-0/mdtest_tree.0.0/'
+V-1: Rank   0 Line  1833 main   Tree removal      :          0.119 sec,          8.399 ops/sec
+V-2: Rank   0 Line  1834 main (at end of for j loop): Removing testdir of '/mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.0-0'
+
+V-1: Rank   0 Line  1651 main: * iteration 2 *
+V-2: Rank   0 Line  1656 main (for j loop): making testdir, '/mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.1-0'
+V-1: Rank   0 Line  1576 Entering create_remove_directory_tree on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.1-0, currDepth = 0...
+V-2: Rank   0 Line  1582 Making directory '/mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.1-0/mdtest_tree.0.0/'
+V-1: Rank   0 Line  1576 Entering create_remove_directory_tree on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.1-0/mdtest_tree.0.0/, currDepth = 1...
+V-1: Rank   0 Line  1725 V-1: main:   Tree creation     :          0.282 sec,          3.542 ops/sec
+delaying 10 seconds . . .
+V-1: Rank   0 Line   305 Entering unique_dir_access, set it to /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.1-0/mdtest_tree.6.0
+V-1: Rank   0 Line   225 V-1: Entering offset_timers...
+V-1: Rank   0 Line   481 Entering create_remove_items on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.1-0/mdtest_tree.6.0, currDepth = 0...
+V-1: Rank   0 Line   412 Entering create_remove_items_helper on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.1-0/mdtest_tree.6.0
+V-1: Rank   0 Line   305 Entering unique_dir_access, set it to /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.1-0/mdtest_tree.12.0
+V-1: Rank   0 Line   225 V-1: Entering offset_timers...
+V-1: Rank   0 Line   549 Entering mdtest_stat on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.1-0/mdtest_tree.12.0
+V-1: Rank   0 Line   305 Entering unique_dir_access, set it to /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.1-0/mdtest_tree.18.0
+V-1: Rank   0 Line   225 V-1: Entering offset_timers...
+V-1: Rank   0 Line   632 Entering mdtest_read on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.1-0/mdtest_tree.18.0
+V-1: Rank   0 Line   305 Entering unique_dir_access, set it to /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.1-0/mdtest_tree.0.0
+V-1: Rank   0 Line   225 V-1: Entering offset_timers...
+V-1: Rank   0 Line   481 Entering create_remove_items on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.1-0/mdtest_tree.0.0, currDepth = 0...
+V-1: Rank   0 Line   412 Entering create_remove_items_helper on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.1-0/mdtest_tree.0.0
+V-1: Rank   0 Line   305 Entering unique_dir_access, set it to /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.1-0/
+V-1: Rank   0 Line   225 V-1: Entering offset_timers...
+V-1: Rank   0 Line  1223   File creation     :         29.000 sec,       8275.801 ops/sec
+V-1: Rank   0 Line  1227   File stat         :         10.230 sec,      23461.112 ops/sec
+V-1: Rank   0 Line  1228   File read         :         27.441 sec,       8746.191 ops/sec
+V-1: Rank   0 Line  1229   File removal      :         20.517 sec,      11697.654 ops/sec
+V-1: Rank   0 Line  1576 Entering create_remove_directory_tree on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.1-0, currDepth = 0...
+V-1: Rank   0 Line  1576 Entering create_remove_directory_tree on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.1-0/mdtest_tree.0.0/, currDepth = 1...
+V-2: Rank   0 Line  1600 Remove directory '/mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.1-0/mdtest_tree.0.0/'
+V-1: Rank   0 Line  1833 main   Tree removal      :          0.154 sec,          6.486 ops/sec
+V-2: Rank   0 Line  1834 main (at end of for j loop): Removing testdir of '/mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.1-0'
+
+V-1: Rank   0 Line  1651 main: * iteration 3 *
+V-2: Rank   0 Line  1656 main (for j loop): making testdir, '/mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.2-0'
+V-1: Rank   0 Line  1576 Entering create_remove_directory_tree on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.2-0, currDepth = 0...
+V-2: Rank   0 Line  1582 Making directory '/mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.2-0/mdtest_tree.0.0/'
+V-1: Rank   0 Line  1576 Entering create_remove_directory_tree on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.2-0/mdtest_tree.0.0/, currDepth = 1...
+V-1: Rank   0 Line  1725 V-1: main:   Tree creation     :          0.338 sec,          2.958 ops/sec
+delaying 10 seconds . . .
+V-1: Rank   0 Line   305 Entering unique_dir_access, set it to /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.2-0/mdtest_tree.6.0
+V-1: Rank   0 Line   225 V-1: Entering offset_timers...
+V-1: Rank   0 Line   481 Entering create_remove_items on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.2-0/mdtest_tree.6.0, currDepth = 0...
+V-1: Rank   0 Line   412 Entering create_remove_items_helper on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.2-0/mdtest_tree.6.0
+V-1: Rank   0 Line   305 Entering unique_dir_access, set it to /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.2-0/mdtest_tree.12.0
+V-1: Rank   0 Line   225 V-1: Entering offset_timers...
+V-1: Rank   0 Line   549 Entering mdtest_stat on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.2-0/mdtest_tree.12.0
+V-1: Rank   0 Line   305 Entering unique_dir_access, set it to /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.2-0/mdtest_tree.18.0
+V-1: Rank   0 Line   225 V-1: Entering offset_timers...
+V-1: Rank   0 Line   632 Entering mdtest_read on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.2-0/mdtest_tree.18.0
+V-1: Rank   0 Line   305 Entering unique_dir_access, set it to /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.2-0/mdtest_tree.0.0
+V-1: Rank   0 Line   225 V-1: Entering offset_timers...
+V-1: Rank   0 Line   481 Entering create_remove_items on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.2-0/mdtest_tree.0.0, currDepth = 0...
+V-1: Rank   0 Line   412 Entering create_remove_items_helper on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.2-0/mdtest_tree.0.0
+V-1: Rank   0 Line   305 Entering unique_dir_access, set it to /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.2-0/
+V-1: Rank   0 Line   225 V-1: Entering offset_timers...
+V-1: Rank   0 Line  1223   File creation     :         28.792 sec,       8335.525 ops/sec
+V-1: Rank   0 Line  1227   File stat         :         10.927 sec,      21964.463 ops/sec
+V-1: Rank   0 Line  1228   File read         :         30.379 sec,       7900.261 ops/sec
+V-1: Rank   0 Line  1229   File removal      :         21.209 sec,      11315.770 ops/sec
+V-1: Rank   0 Line  1576 Entering create_remove_directory_tree on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.2-0, currDepth = 0...
+V-1: Rank   0 Line  1576 Entering create_remove_directory_tree on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.2-0/mdtest_tree.0.0/, currDepth = 1...
+V-2: Rank   0 Line  1600 Remove directory '/mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.2-0/mdtest_tree.0.0/'
+V-1: Rank   0 Line  1833 main   Tree removal      :          0.105 sec,          9.544 ops/sec
+V-2: Rank   0 Line  1834 main (at end of for j loop): Removing testdir of '/mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.2-0'
+
+V-1: Rank   0 Line  1651 main: * iteration 4 *
+V-2: Rank   0 Line  1656 main (for j loop): making testdir, '/mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.3-0'
+V-1: Rank   0 Line  1576 Entering create_remove_directory_tree on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.3-0, currDepth = 0...
+V-2: Rank   0 Line  1582 Making directory '/mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.3-0/mdtest_tree.0.0/'
+V-1: Rank   0 Line  1576 Entering create_remove_directory_tree on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.3-0/mdtest_tree.0.0/, currDepth = 1...
+V-1: Rank   0 Line  1725 V-1: main:   Tree creation     :          0.296 sec,          3.383 ops/sec
+delaying 10 seconds . . .
+V-1: Rank   0 Line   305 Entering unique_dir_access, set it to /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.3-0/mdtest_tree.6.0
+V-1: Rank   0 Line   225 V-1: Entering offset_timers...
+V-1: Rank   0 Line   481 Entering create_remove_items on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.3-0/mdtest_tree.6.0, currDepth = 0...
+V-1: Rank   0 Line   412 Entering create_remove_items_helper on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.3-0/mdtest_tree.6.0
+V-1: Rank   0 Line   305 Entering unique_dir_access, set it to /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.3-0/mdtest_tree.12.0
+V-1: Rank   0 Line   225 V-1: Entering offset_timers...
+V-1: Rank   0 Line   549 Entering mdtest_stat on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.3-0/mdtest_tree.12.0
+V-1: Rank   0 Line   305 Entering unique_dir_access, set it to /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.3-0/mdtest_tree.18.0
+V-1: Rank   0 Line   225 V-1: Entering offset_timers...
+V-1: Rank   0 Line   632 Entering mdtest_read on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.3-0/mdtest_tree.18.0
+V-1: Rank   0 Line   305 Entering unique_dir_access, set it to /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.3-0/mdtest_tree.0.0
+V-1: Rank   0 Line   225 V-1: Entering offset_timers...
+V-1: Rank   0 Line   481 Entering create_remove_items on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.3-0/mdtest_tree.0.0, currDepth = 0...
+V-1: Rank   0 Line   412 Entering create_remove_items_helper on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.3-0/mdtest_tree.0.0
+V-1: Rank   0 Line   305 Entering unique_dir_access, set it to /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.3-0/
+V-1: Rank   0 Line   225 V-1: Entering offset_timers...
+V-1: Rank   0 Line  1223   File creation     :         28.578 sec,       8398.165 ops/sec
+V-1: Rank   0 Line  1227   File stat         :         10.160 sec,      23621.556 ops/sec
+V-1: Rank   0 Line  1228   File read         :         31.733 sec,       7563.104 ops/sec
+V-1: Rank   0 Line  1229   File removal      :         20.365 sec,      11784.682 ops/sec
+V-1: Rank   0 Line  1576 Entering create_remove_directory_tree on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.3-0, currDepth = 0...
+V-1: Rank   0 Line  1576 Entering create_remove_directory_tree on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.3-0/mdtest_tree.0.0/, currDepth = 1...
+V-2: Rank   0 Line  1600 Remove directory '/mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.3-0/mdtest_tree.0.0/'
+V-1: Rank   0 Line  1833 main   Tree removal      :          0.151 sec,          6.623 ops/sec
+V-2: Rank   0 Line  1834 main (at end of for j loop): Removing testdir of '/mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.3-0'
+
+V-1: Rank   0 Line  1651 main: * iteration 5 *
+V-2: Rank   0 Line  1656 main (for j loop): making testdir, '/mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.4-0'
+V-1: Rank   0 Line  1576 Entering create_remove_directory_tree on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.4-0, currDepth = 0...
+V-2: Rank   0 Line  1582 Making directory '/mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.4-0/mdtest_tree.0.0/'
+V-1: Rank   0 Line  1576 Entering create_remove_directory_tree on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.4-0/mdtest_tree.0.0/, currDepth = 1...
+V-1: Rank   0 Line  1725 V-1: main:   Tree creation     :          0.338 sec,          2.956 ops/sec
+delaying 10 seconds . . .
+V-1: Rank   0 Line   305 Entering unique_dir_access, set it to /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.4-0/mdtest_tree.6.0
+V-1: Rank   0 Line   225 V-1: Entering offset_timers...
+V-1: Rank   0 Line   481 Entering create_remove_items on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.4-0/mdtest_tree.6.0, currDepth = 0...
+V-1: Rank   0 Line   412 Entering create_remove_items_helper on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.4-0/mdtest_tree.6.0
+V-1: Rank   0 Line   305 Entering unique_dir_access, set it to /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.4-0/mdtest_tree.12.0
+V-1: Rank   0 Line   225 V-1: Entering offset_timers...
+V-1: Rank   0 Line   549 Entering mdtest_stat on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.4-0/mdtest_tree.12.0
+V-1: Rank   0 Line   305 Entering unique_dir_access, set it to /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.4-0/mdtest_tree.18.0
+V-1: Rank   0 Line   225 V-1: Entering offset_timers...
+V-1: Rank   0 Line   632 Entering mdtest_read on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.4-0/mdtest_tree.18.0
+V-1: Rank   0 Line   305 Entering unique_dir_access, set it to /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.4-0/mdtest_tree.0.0
+V-1: Rank   0 Line   225 V-1: Entering offset_timers...
+V-1: Rank   0 Line   481 Entering create_remove_items on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.4-0/mdtest_tree.0.0, currDepth = 0...
+V-1: Rank   0 Line   412 Entering create_remove_items_helper on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.4-0/mdtest_tree.0.0
+V-1: Rank   0 Line   305 Entering unique_dir_access, set it to /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.4-0/
+V-1: Rank   0 Line   225 V-1: Entering offset_timers...
+V-1: Rank   0 Line  1223   File creation     :         26.360 sec,       9104.610 ops/sec
+V-1: Rank   0 Line  1227   File stat         :         10.117 sec,      23723.012 ops/sec
+V-1: Rank   0 Line  1228   File read         :         29.444 sec,       8150.996 ops/sec
+V-1: Rank   0 Line  1229   File removal      :         19.565 sec,      12266.757 ops/sec
+V-1: Rank   0 Line  1576 Entering create_remove_directory_tree on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.4-0, currDepth = 0...
+V-1: Rank   0 Line  1576 Entering create_remove_directory_tree on /mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.4-0/mdtest_tree.0.0/, currDepth = 1...
+V-2: Rank   0 Line  1600 Remove directory '/mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.4-0/mdtest_tree.0.0/'
+V-1: Rank   0 Line  1833 main   Tree removal      :          0.083 sec,         12.030 ops/sec
+V-2: Rank   0 Line  1834 main (at end of for j loop): Removing testdir of '/mnt/glustervol1_io/io_benchmarks/simple-mdtest-user/test-dir.4-0'
+
+V-1: Rank   0 Line  1246 Entering summarize_results...
+
+SUMMARY rate: (of 5 iterations)
+   Operation                      Max            Min           Mean        Std Dev
+   ---------                      ---            ---           ----        -------
+   File creation             :       9104.735       7459.991       8314.797        522.131
+   File stat                 :      23723.401      18236.409      22201.311       2082.923
+   File read                 :       8746.320       5589.540       7590.022       1072.385
+   File removal              :      12266.792      10864.600      11584.637        470.313
+   Tree creation             :          3.542          1.665          2.901          0.660
+   Tree removal              :         12.030          6.486          8.616          2.053
+V-1: Entering PrintTimestamp...
+-- finished at 10/14/2021 10:29:47 --
+
