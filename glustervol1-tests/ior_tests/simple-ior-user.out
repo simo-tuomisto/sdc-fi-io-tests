@@ -1,0 +1,70 @@
+/mnt/home_nfs/tuomiss1/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/ior-3.3.0-scqmwbfadkbt6v7kmdc4rwtf3mjenwhf/bin/ior
+Running ior to /mnt/glustervol1/io_benchmarks/simple-ior-user
+Iterations: 5
+IOR-3.3.0: MPI Coordinated Test of Parallel I/O
+Began               : Thu Oct 14 10:48:11 2021
+Command line        : /mnt/home_nfs/tuomiss1/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/ior-3.3.0-scqmwbfadkbt6v7kmdc4rwtf3mjenwhf/bin/ior -w -k -r -m -v -a POSIX -i 5 -b 22906142720 -t 1048576 -e -g -C -F -o /mnt/glustervol1/io_benchmarks/simple-ior-user/IOR_File.bin
+Machine             : Linux hpc-4-80core-1.novalocal
+Start time skew across all tasks: 0.00 sec
+TestID              : 0
+StartTime           : Thu Oct 14 10:48:11 2021
+Path                : /mnt/glustervol1/io_benchmarks/simple-ior-user
+FS                  : 17.1 TiB   Used FS: 15.2%   Inodes: 7350.0 Mi   Used Inodes: 0.0%
+Participating tasks: 24
+Using reorderTasks '-C' (useful to avoid read cache in client)
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : /mnt/glustervol1/io_benchmarks/simple-ior-user/IOR_File.bin
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 4
+tasks               : 24
+clients per node    : 6
+repetitions         : 5
+xfersize            : 1 MiB
+blocksize           : 21.33 GiB
+aggregate filesize  : 511.99 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+Commencing write performance test: Thu Oct 14 10:48:11 2021
+write     569.36     569.42     0.037872    22369280   1024.00    0.093424   920.73     0.002679   920.82     0   
+Commencing read performance test: Thu Oct 14 11:03:32 2021
+
+read      835.91     835.92     0.020361    22369280   1024.00    0.007646   627.19     0.007877   627.20     0   
+Commencing write performance test: Thu Oct 14 11:14:01 2021
+write     662.75     664.21     0.028362    22369280   1024.00    1.74       789.32     0.003182   791.07     1   
+Commencing read performance test: Thu Oct 14 11:27:10 2021
+
+read      1217.98    1218.03    0.018985    22369280   1024.00    0.009270   430.43     0.005564   430.45     1   
+Commencing write performance test: Thu Oct 14 11:34:21 2021
+write     582.42     582.61     0.041194    22369280   1024.00    0.294213   899.87     0.007997   900.18     2   
+Commencing read performance test: Thu Oct 14 11:49:21 2021
+
+read      873.96     873.99     0.025752    22369280   1024.00    0.013276   599.87     0.005510   599.89     2   
+Commencing write performance test: Thu Oct 14 11:59:21 2021
+write     619.74     619.98     0.025983    22369280   1024.00    0.314427   845.65     0.003332   845.96     3   
+Commencing read performance test: Thu Oct 14 12:13:27 2021
+
+read      911.83     911.88     0.022282    22369280   1024.00    0.027171   574.95     0.002244   574.98     3   
+Commencing write performance test: Thu Oct 14 12:23:02 2021
+write     605.85     606.10     0.025227    22369280   1024.00    0.345637   865.00     0.006804   865.36     4   
+Commencing read performance test: Thu Oct 14 12:37:27 2021
+
+read      986.34     986.39     0.023267    22369280   1024.00    0.019427   531.51     0.006088   531.54     4   
+Max Write: 662.75 MiB/sec (694.94 MB/sec)
+Max Read:  1217.98 MiB/sec (1277.15 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write         662.75     569.36     608.03      32.52     662.75     569.36     608.03      32.52  864.67776         NA            NA     0     24   6    5   1     1        1         0    0      1 22906142720  1048576  524280.0 POSIX      0
+read         1217.98     835.91     965.20     135.82    1217.98     835.91     965.20     135.82  552.81101         NA            NA     0     24   6    5   1     1        1         0    0      1 22906142720  1048576  524280.0 POSIX      0
+Finished            : Thu Oct 14 12:46:19 2021
